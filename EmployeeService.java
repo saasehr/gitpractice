@@ -10,9 +10,10 @@ public class EmployeeService {
 		 
 	 }
 	 
-	 public updateSalary(int empId, double salary) {
+	 public updateSalary(int empId, double salary.double commission) {
 		 
-		  return employeeDao.updateSalary(int empId, double salary);
+		  double newSalary = salary + (commission * 0.10)
+		  employeeDao.updateSalary(empId, newSalary);
 	 }
 	 
 }
