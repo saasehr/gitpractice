@@ -16,4 +16,10 @@ public class EmployeeService {
 		  employeeDao.updateSalary(empId, newSalary);
 	 }
 	 
+	 public terminateEmployee(int empId) {
+		 
+		 employeeDao.terminateEmployee(empId);
+		 
+	 }
+	 
 }
